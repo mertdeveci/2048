@@ -1,0 +1,149 @@
+/* * * * *  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*
+*	@author: Mert Deveci
+*	@contact: mertdeveci0@gmail.com
+*   @contact: https://www.linkedin.com/in/mert-deveci-49361a135/
+*	@company: Sakarya University - Department of Computer Engineering (cs.sakarya.edu.tr)
+*	@date: 4/9/2020
+*   @file extension: CSS
+*
+*	@description:   css codes of 2048 GAME
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+
+body{
+    margin-top: 1.5em;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 5em;
+}
+td>button{
+    width: 4em;
+    height: 4em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+    border-radius: .25rem;
+    border: solid 1px transparent;
+    pointer-events: none;
+    margin-right: 5px;
+    padding: 0;
+    background-color: #CDC1B4;
+    margin: 0.3em;
+}
+h1{
+    color: #776E66;
+}
+p{
+    font-size: 4em; 
+    z-index: 2; 
+    margin-top: 3em;
+    color: #776E66;
+    position: fixed;
+    visibility: hidden;
+}
+
+.name{
+    z-index: 2;
+    visibility: hidden;
+    border-radius: 5px;
+    position: fixed;
+}
+div>button{
+    color:white;
+    background-color: green;
+    border: solid 1px green;
+    border-radius: 5px;
+    height: 1.9em;
+    border-color: green;
+}
+div>button:hover{
+    color:green;
+    background-color: white;
+    border: solid 1px green;
+    height: 1.9em;
+}
+#try_again{
+    color:white;
+    background-color: orange;
+    border: solid 1px orange;
+    border-radius: 5px;
+    height: 1.9em;
+    position: fixed;
+    z-index: 3;
+    visibility: hidden;
+    margin-top: 18em;
+}
+#try_again:hover{
+    color:orange;
+    background-color: white;
+    border: solid 1px orange;
+    border-radius: 5px;
+    height: 1.9em;
+    border-color: white;
+    position: fixed;
+    z-index: 2;
+}
+#try_again:focus{
+    border: solid 1px orange;
+}
+.table1{
+    background-color:#BBADA0;
+    border-radius: 7px;
+    margin-bottom: 10em;
+    position: fixed;
+}
+.table2{
+    background-color:#BBADA0;
+    border-radius: 7px;
+    margin-bottom: 10em ;
+    opacity: 50%;
+}
+
+.cell-2{ background-color: #EEE4DA; }
+.cell-4{ background-color: #EDE0C8; }
+.cell-8{ background-color: #EDAE6C; }
+.cell-16{ background-color: #F59563; }
+.cell-32{ background-color: #F67C5F; }
+.cell-64{ background-color: #EB5A3C; }
+.cell-128{ background-color: #E6C976; }
+.cell-256{ background-color: #E5C758; }
+.cell-512{ background-color: #E9C45A; }
+.cell-1024{ background-color: #EBC640; }
+.cell-2048{ background-color: #EDC22E; }
+.cell-4096{ background-color: #3C3A32; }
+.cell-8192{ background-color: #3C3A32; }
+.cell-16384{ background-color: #3C3A32; }
+.default{  background-color: #CDC1B4;}
+.upper-8{ color: white; }
+
+@media(min-width: 320px){	
+    td>button{
+        width: 2.2em;
+        height: 2.2em;
+    }
+}
+
+@media(min-width: 360px){	
+    td>button{
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
+@media(min-width: 410px){	
+    td>button{
+        width: 3em;
+        height: 3em;
+    }
+}
+@media(min-width: 768px){	
+    td>button{
+        width: 4em;
+        height: 4em;
+    }
+}
